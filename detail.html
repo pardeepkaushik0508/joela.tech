@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joel Amaldas | Portfolio</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="favicon.png">
+<script>
+  /* Every "Learn more" page lives inside the main portfolio as a pop-up.
+     This page forwards old or shared links (detail.html?id=...) to that pop-up. */
+  (function(){
+    var m = location.search.match(/[?&]id=([\w-]+)/);
+    location.replace('index.html' + (m ? '#detail-' + m[1] : ''));
+  })();
+</script>
+<style>
+  body{margin:0; min-height:100vh; display:grid; place-items:center; font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif; background:#f6f7fc; color:#1b1f4b}
+  a{color:#4f3ff0; font-weight:600}
+  @media (prefers-color-scheme: dark){ body{background:#0d1020; color:#e8eaf6} a{color:#9d93ff} }
+</style>
+</head>
+<body>
+  <p>Opening Joel&rsquo;s portfolio&hellip; <a href="index.html">Continue</a></p>
+</body>
+</html>
